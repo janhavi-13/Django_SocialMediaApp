@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% block title %} Create a new post {% endblock %}
+
+{% block body %}
+
+    <form action="." method="POST" class="bg-purple-500 p-8 rounded shadow-md max-w-md text-white">
+        {% csrf_token %}
+        <div class="textField">
+           Text : {{ form.text }}
+        </div> <br>
+        <div>
+            <button type="submit" class="bg-gradient-to-br from-purple-800 to-pink-500 text-white font-bold py-2 px-4 rounded transition duration-100 transform hover:scale-105 hover:w-100 flex items-center justify-center">
+                Create Post&nbsp;<i class="fa-solid fa-circle-arrow-right"></i>
+            </button>
+        </div>
+    </form>
+    <style>
+        form input{
+            width: 90%;
+            height: 50px;
+        }
+    </style>
+
+    <script>
+        $(document).ready(function(){
+           const input = $('input');
+            input.attr('class','shadow appearance-none border rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline');
+        });
+    </script>
+{% endblock %}
