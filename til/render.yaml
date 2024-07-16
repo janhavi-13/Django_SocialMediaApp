@@ -13,5 +13,5 @@ services:
       - key: DEBUG
         value: false
       - key: ALLOWED_HOSTS
-        value: yourapp.onrender.com
+        value: https://django-socialmediaapp.onrender.com
       # Add other necessary environment variables here
