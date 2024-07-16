@@ -7,7 +7,7 @@ services:
     startCommand: "gunicorn Django_SocialMediaApp.wsgi:application"
     envVars:
       - key: DJANGO_SETTINGS_MODULE
-        value: Django_SocialMediaApp.settings
+        value: settings
       - key: SECRET_KEY
         sync: false
       - key: DEBUG
