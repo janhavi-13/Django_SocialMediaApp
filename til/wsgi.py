@@ -11,8 +11,7 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', '
-BreadcrumbsDjango_SocialMediaApp.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'Django_SocialMediaApp.til.settings')
 
 application = get_wsgi_application()
 port = os.environ.get('PORT', '8000')
