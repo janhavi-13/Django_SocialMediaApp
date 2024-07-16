@@ -1,1 +1,1 @@
-web: gunicorn Django_SocialMediaApp.til.wsgi
+web: gunicorn til.wsgi
