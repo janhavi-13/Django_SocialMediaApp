@@ -15,3 +15,5 @@ os.environ.setdefault('DJANGO_SETTINGS_MODULE', '
 BreadcrumbsDjango_SocialMediaApp.settings')
 
 application = get_wsgi_application()
+port = os.environ.get('PORT', '8000')
+application.listen(port)
