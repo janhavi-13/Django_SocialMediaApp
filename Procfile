@@ -1,1 +1,1 @@
-web: gunicorn til.wsgi
+web: gunicorn til.wsgi:application
